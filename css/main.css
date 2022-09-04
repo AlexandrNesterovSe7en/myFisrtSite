@@ -300,6 +300,9 @@ footer .footer-container_menu img {
   height: 26px;
   width: 26px;
 }
+.container-skils .container-skils_icon ul li .star__margin {
+  margin-top: 55px;
+}
 .container-skils .container-skils_icon ul li .container-icon_figm {
   margin: 0px auto;
   margin-top: 4px;
@@ -364,6 +367,7 @@ footer .footer-container_menu img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 600px;
 }
 .container-contacts h2 {
   margin-top: 114px;
@@ -459,4 +463,82 @@ footer .footer-container_menu img {
   line-height: 17px;
   color: #828282;
   margin-top: 45px;
+}
+
+@media (max-width: 1600px) {
+  .container-skils .container-skils_icon ul {
+    margin: 0px;
+  }
+}
+@media (max-width: 1180px) {
+  footer .footer-container_menu {
+    max-width: 100%;
+  }
+
+  .container-name p:last-child {
+    -webkit-transform: rotate(-90deg) translateY(0px);
+            transform: rotate(-90deg) translateY(0px);
+  }
+
+  .footer-menu {
+    margin: 0px 19px;
+  }
+
+  .container-name h1 {
+    margin-left: 30px;
+  }
+
+  .footer hr {
+    margin: 0px auto;
+    margin-top: 32px;
+    width: 93%;
+  }
+
+  .container-skils {
+    height: 1000px;
+  }
+  .container-skils .container-skils_icon {
+    height: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container-skils .container-skils_icon ul {
+    width: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .container-skils .container-skils_icon ul li:nth-child(n+3) {
+    margin-top: 53px;
+  }
+  .container-skils .container-skils_icon ul li .img2 {
+    height: 85px;
+  }
+}
+@media (max-width: 1000px) {
+  .container-portfolio img {
+    width: 100%;
+  }
+
+  .container-portfolio div {
+    margin: 0px 31px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
