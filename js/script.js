@@ -27,7 +27,7 @@ changeHeightFooterDiv(heightFooter, screenWidth, divFooter)
 
 // скрывает менюшку
 let lastScroll = 0;
-const defaultOffset = 200;
+const defaultOffset = 400;
 const header = document.querySelector('.footer-fixed');
 
 const scrollPosition = () => window.pageYOffset || document.documentElement.scrollTop;
