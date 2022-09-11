@@ -26,15 +26,27 @@ changeHeightFooterDiv(heightFooter, screenWidth, divFooter)
 
 const footerBurgerCross = document.querySelector('.footer-burger')
 const footerFixedBurgerOpen = document.querySelector('.footer-fixed')
-const ruEngLogo = document.querySelector('.container-name p:last-child')
+
+const languageBurgerOpen = document.createElement('p')
+languageBurgerOpen.innerHTML = '<span>RU</span>|ENG'
 
 footerBurgerCross.addEventListener('click', () => {
 	footerBurgerCross.classList.toggle('cross')
 	footerFixedBurgerOpen.classList.toggle('footer-fixed__burger-open')
-	ruEngLogo.classList.toggle('ruEngLogo')
 	if (footerBurgerCross.matches('.cross')) {
 		document.body.style.overflow = 'hidden'
+		languageBurgerOpen.style.cssText = `
+		font-size: 34px;
+		font-weight: bold;
+		position: absolute;
+		right: 1px;
+		top: 600px;
+		transform: rotate(90deg);
+		`
+		languageBurgerOpen.querySelector('span').style.color = '#828282'
+		footerFixedBurgerOpen.append(languageBurgerOpen)
 	} else{
 		document.body.style.overflow = null
+		languageBurgerOpen.remove()
 	}
 })
