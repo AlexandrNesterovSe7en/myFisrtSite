@@ -578,8 +578,6 @@ footer .footer-container_menu img {
     width: 100%;
     background-color: #fff;
     z-index: 1;
-    -webkit-transition-duration: 200ms;
-            transition-duration: 200ms;
     height: 79px;
   }
   .footer-fixed.hide {
@@ -640,7 +638,7 @@ footer .footer-container_menu img {
   }
 
   .footer-fixed__burger-open {
-    height: 100%;
+    height: 812px;
   }
   .footer-fixed__burger-open hr {
     display: none;
@@ -659,17 +657,27 @@ footer .footer-container_menu img {
     width: 200px;
   }
   .footer-fixed__burger-open .footer-menu li:nth-child(n+2) {
-    -webkit-transition-duration: 700ms;
-            transition-duration: 700ms;
+    -webkit-transition-duration: 200ms;
+            transition-duration: 200ms;
     position: relative;
     visibility: visible;
     margin-top: 68px;
     width: 100%;
   }
   .footer-fixed__burger-open .footer-menu a {
-    -webkit-transition-duration: 500ms;
-            transition-duration: 500ms;
+    -webkit-transition-duration: 200ms;
+            transition-duration: 200ms;
     text-align: start;
     font-size: 34px;
+  }
+
+  .container-name p:last-child.ruEngLogo {
+    position: fixed;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    right: 5px;
+    top: 650px;
+    font-size: 34px;
+    z-index: 6;
   }
 }

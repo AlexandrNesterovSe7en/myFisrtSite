@@ -26,10 +26,12 @@ changeHeightFooterDiv(heightFooter, screenWidth, divFooter)
 
 const footerBurgerCross = document.querySelector('.footer-burger')
 const footerFixedBurgerOpen = document.querySelector('.footer-fixed')
+const ruEngLogo = document.querySelector('.container-name p:last-child')
 
 footerBurgerCross.addEventListener('click', () => {
 	footerBurgerCross.classList.toggle('cross')
 	footerFixedBurgerOpen.classList.toggle('footer-fixed__burger-open')
+	ruEngLogo.classList.toggle('ruEngLogo')
 	if (footerBurgerCross.matches('.cross')) {
 		document.body.style.overflow = 'hidden'
 	} else{
