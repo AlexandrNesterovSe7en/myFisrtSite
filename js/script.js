@@ -38,6 +38,7 @@ footerBurgerCross.addEventListener('click', () => {
 			if (event.target == event.target.closest('a')){
 				footerBurgerCross.classList.toggle('cross')
 				footerFixedBurgerOpen.classList.toggle('footer-fixed__burger-open')
+				document.body.style.overflow = null
 			}
 		}, {once: true})
 	} else{
