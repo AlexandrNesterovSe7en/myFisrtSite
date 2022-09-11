@@ -640,7 +640,7 @@ footer .footer-container_menu img {
   .footer-fixed__burger-open {
     border: 1px solid #000;
     overflow-y: scroll;
-    height: 95vh;
+    height: 100vh;
   }
   .footer-fixed__burger-open hr {
     display: none;
