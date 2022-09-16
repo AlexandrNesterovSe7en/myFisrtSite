@@ -21,7 +21,7 @@ function changeHeightFooterDiv(height, width, div, screenConst = 1000) {
 	}
 }
 changeHeightPortfolioDiv(heightPortfolio, screenWidth, divPortfolio)
-changeHeightFooterDiv(heightFooter, screenWidth, divFooter)
+// changeHeightFooterDiv(heightFooter, screenWidth, divFooter)
 
 
 const footerBurgerCross = document.querySelector('.footer-burger')
