@@ -756,3 +756,10 @@ footer .footer-container_menu img {
     margin: 0;
   }
 }
+
+@media (max-width: 348px) {
+  .adaptive_photo{
+    width: 100%;
+    margin: 2px;
+  }
+}
